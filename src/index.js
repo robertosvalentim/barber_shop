@@ -9,4 +9,4 @@ app.use(cors());
 
 app.use(rotas);
 
-app.listen(PORT);
+app.listen(process.env.PORT || 3000);
