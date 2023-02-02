@@ -4,6 +4,12 @@ const express = require('express');
 
 const rotas = express();
 
+
+rotas.get('/',(req, res)=>{
+    res.send("Primeira rota de teste!");
+});
+
+
 //###### User ######
 //Add
 //Get
@@ -19,3 +25,5 @@ const rotas = express();
 //Add Comment
 //Get Comment
 //Delete Comment
+
+module.exports = rotas;
