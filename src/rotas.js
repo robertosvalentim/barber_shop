@@ -6,7 +6,7 @@ const rotas = express();
 
 
 rotas.get('/',(req, res)=>{
-    res.send("Primeira rota de teste!");
+   return res.send("Primeira rota de teste!");
 });
 
 
