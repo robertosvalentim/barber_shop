@@ -1,14 +1,11 @@
 const express = require('express');
-
-
-
+const {addUser,getUser,getAllUsers} = require('./controllers/user');
 const rotas = express();
 
 
-rotas.get('/',(req, res)=>{
-   return res.send("Primeira rota de teste!");
-});
-
+rotas.get('/users',getAllUsers);
+rotas.get('/user/:id',getUser);
+rotas.post('/user',addUser);
 
 //###### User ######
 //Add
