@@ -15,7 +15,7 @@ app.use(rotas);
     const CommonUser = require('./models/CommonUser');
     const Barber = require('./models/Barber');
     const db = require('./models/db');
-    
+
     const resultado = await db.sync();
     //console.log(resultado);
 })();
