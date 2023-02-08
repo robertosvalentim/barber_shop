@@ -16,7 +16,7 @@ app.use(rotas);
     const Barber = require('./models/Barber');
     const db = require('./models/db');
 
-    const resultado = await db.sync();
+    const resultado = await db.sync({force: true});
     //console.log(resultado);
 })();
 

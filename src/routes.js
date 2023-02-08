@@ -2,6 +2,9 @@ const express = require('express');
 const {addUser,getUser,getAllUsers} = require('./controllers/user');
 const rotas = express();
 
+rotas.get('/', (req, res)=>{
+    return res.status(200).json({mensagem:"Esta é a rota principal."});
+});
 
 rotas.get('/users',getAllUsers);
 rotas.get('/user/:id',getUser);
