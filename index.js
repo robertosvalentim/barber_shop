@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const rotas = require('./routes');
+const rotas = require('./src/routes');
 
 
 const app = express();
@@ -11,10 +11,10 @@ app.use(cors());
 app.use(rotas);
 
 (async()=>{
-    const User = require('./models/User');
-    const CommonUser = require('./models/CommonUser');
-    const Barber = require('./models/Barber');
-    const db = require('./models/db');
+    const User = require('./src/models/User');
+    const CommonUser = require('./src/models/CommonUser');
+    const Barber = require('./src/models/Barber');
+    const db = require('./src/models/db');
 
     const resultado = await db.sync({force: true});
     //console.log(resultado);
