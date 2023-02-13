@@ -1,11 +1,18 @@
 const express = require('express');
-const {addUser,getUser,getAllUsers} = require('./controllers/user');
+const {addUser,getUser,getAllUsers} = require('../controllers/user');
 const rotas = express();
 
-rotas.get('/users',getAllUsers);
-rotas.get('/user/:id',getUser);
-rotas.post('/user',addUser);
 
+
+module.exports = {
+    register(app) {
+  
+        app.get('/users',getAllUsers);
+        app.get('/user/:id',getUser);
+        app.post('/user',addUser);
+    }
+}
+  
 //###### User ######
 //Add
 //Get
@@ -21,5 +28,3 @@ rotas.post('/user',addUser);
 //Add Comment
 //Get Comment
 //Delete Comment
-
-module.exports = rotas;
