@@ -28,13 +28,13 @@ app.listen(PORT, ()=>{console.log("Server runing in port "+PORT)});
 
 const server = require('./server');
 //const middlewares = require('./middlewares')
-const routes = require('./src/routes');
+const routes = require('./routes');
 
 (async()=>{
-    const User = require('./src/models/User');
-    const CommonUser = require('./src/models/CommonUser');
-    const Barber = require('./src/models/Barber');
-    const db = require('./src/models/db');
+    const User = require('./models/User');
+    const CommonUser = require('./models/CommonUser');
+    const Barber = require('./models/Barber');
+    const db = require('./models/db');
 
     const resultado = await db.sync(/*{force: true}*/);
     //console.log(resultado);
