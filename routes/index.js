@@ -10,7 +10,7 @@ module.exports = {
         app.get('/users',getAllUsers);
         app.get('/user/:id',getUser);
         app.post('/user',addUser);
-        app.get('/', )
+        //app.get('/', )
     }
 }
   
