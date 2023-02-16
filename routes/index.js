@@ -7,8 +7,8 @@ const rotas = express();
 module.exports = {
     register(app) {
   
-        app.get('/users',getAllUsers);
-        app.get('/user/:id',getUser);
+        app.use('/users',getAllUsers);
+        app.use('/user/:id',getUser);
         app.post('/user',addUser);
         //app.get('/', )
     }
