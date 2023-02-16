@@ -1,15 +1,15 @@
-//const express = require('express');
-//const {addUser,getUser,getAllUsers} = require('../controllers/user');
-//const rotas = express();
+const express = require('express');
+const {addUser,getUser,getAllUsers} = require('../controllers/user');
+const rotas = express();
 
 
 
 module.exports = {
     register(app) {
   
-        //app.get('/users',getAllUsers);
-        //app.get('/user/:id',getUser);
-        //app.post('/user',addUser);
+        app.get('/users',getAllUsers);
+        app.get('/user/:id',getUser);
+        app.post('/user',addUser);
         app.get('/', )
     }
 }
