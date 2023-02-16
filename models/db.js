@@ -7,7 +7,8 @@ const {Sequelize} = require('sequelize');
 */
 const sequelize = new Sequelize('simplesm_barber', 'simplesm_wp712', '6-meS8)9Sp', {
     host: '192.185.215.61',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    dialectModule: require('mysql2')
 });
 
 sequelize.authenticate()
