@@ -17,10 +17,7 @@
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-<<<<<<< HEAD
-=======
     "jsonwebtoken": "^9.0.0",
->>>>>>> bd0bbdf04b963ccd9df7b64799470db1426303bb
     "mysql2": "^3.1.2",
     "sequelize": "^6.28.0"
   }
